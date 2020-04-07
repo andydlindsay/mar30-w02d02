@@ -1,19 +1,39 @@
 # W02D02 - Asynchronous Control Flow
 
 ### To Do
-* [ ] Breakout! 20 minutes
-* [ ] Asynchronous Programming
-* [ ] Blocking vs Non-Blocking
-* [ ] `setTimeout` and `setInterval`
+* [x] Breakout! 20 minutes
+* [x] Asynchronous Programming
+* [x] Blocking vs Non-Blocking
+* [x] `setTimeout` and `setInterval`
 * [ ] File System Functions (`fs`)
 
 ### Breakout (20 minutes)
 * In groups, run through the questions in this [gist](https://gist.github.com/andydlindsay/d586198046d7074d83e371ead76b4f4b)
 
+### Asynchronous JS
+- JavaScript is Synchronous
+- One line of code executes only after the previous one is done
+- Single threaded
+
+```js
+const name = 'Alice';
+console.log(name);
+```
+
+- Long running processes are an issue
+
+### Blocking vs Non-Blocking
+* Code that takes a long time to run and stops other code from executing is blocking
+* Code that takes a long time to run and doesn't stop the code around it, is non-blocking
 
 
+# NOTE: That callbacks don't always mean async code
 
-
+```js
+array.map()
+array.filter()
+array.forEach()
+```
 
 
 
